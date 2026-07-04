@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PT Prima Andalas Energi — Integrated Poultry Supply & Distribution</title>
+<meta name="description" content="PT Prima Andalas Energi — supplier & distributor ayam broiler terintegrasi. Kapasitas 500 ton/bulan, halal MUI, HACCP, cold chain, melayani HORECA dan industri pengolahan seluruh Indonesia.">
+<meta name="keywords" content="supplier ayam broiler, distributor ayam Jakarta, karkas ayam, boneless dada, MDM, rumah potong ayam, HORECA, cold chain">
+<meta property="og:title" content="PT Prima Andalas Energi — Integrated Poultry Supply & Distribution">
+<meta property="og:description" content="Rantai pasok ayam broiler dari peternak hingga meja Anda. Kapasitas 500 ton/bulan, 100% halal, pengiriman 4 hari ke seluruh Indonesia.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2342;
+  --navy-deep:#071A33;
+  --navy-soft:#12335C;
+  --green:#17A15B;
+  --mint:#46D68C;
+  --gold:#F4C430;
+  --paper:#F4F7FB;
+  --white:#FFFFFF;
+  --ink:#13233B;
+  --muted:#5B6B82;
+  --line:#DDE6F0;
+  --radius:16px;
+  --shadow:0 12px 32px rgba(10,35,66,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px}
+h1,h2,h3,h4,.display{font-family:'Plus Jakarta Sans',sans-serif;line-height:1.2}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Plus Jakarta Sans',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--green)}
+.section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:56px}
+.section-head h2{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;margin:.5rem 0 .75rem}
+.section-head p{color:var(--muted)}
+.dark{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);color:#EAF1F9}
+.dark .section-head p{color:#A9BCD4}
+.dark h2,.dark h3{color:#fff}
+.underline{display:inline-block;width:56px;height:4px;background:var(--green);border-radius:2px}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,26,51,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand-logo{width:38px;height:38px;border-radius:50%;background:conic-gradient(from 210deg,var(--mint),var(--green) 40%,#2E6FB7 70%,var(--mint));display:grid;place-items:center;font-family:'Plus Jakarta Sans';font-weight:800;color:#fff;font-size:.85rem}
+.brand-name{font-family:'Plus Jakarta Sans';font-weight:800;font-size:.95rem;letter-spacing:.02em}
+.brand-tag{display:block;font-size:.62rem;font-weight:600;letter-spacing:.22em;color:var(--mint);text-transform:uppercase}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:#C6D4E6;font-size:.88rem;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--mint)}
+.nav-cta{background:var(--green);color:#fff!important;padding:9px 20px;border-radius:999px;font-weight:600}
+.nav-cta:hover{background:var(--mint);color:var(--navy)!important}
+.nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+
+/* ===== HERO ===== */
+.hero{position:relative;padding:170px 0 110px;background:
+  radial-gradient(900px 500px at 85% -10%,rgba(70,214,140,.18),transparent 60%),
+  radial-gradient(700px 420px at -10% 110%,rgba(46,111,183,.25),transparent 60%),
+  linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 70%);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:26px 26px;pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:820px}
+.hero .eyebrow{color:var(--mint)}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;margin:16px 0 20px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p.lead{font-size:1.1rem;color:#BFD0E4;max-width:600px;margin-bottom:36px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px}
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .2s;cursor:pointer;border:0}
+.btn:hover{transform:translateY(-2px)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(23,161,91,.35)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:var(--mint);color:var(--mint)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);overflow:hidden}
+.stat{background:rgba(255,255,255,.04);padding:22px 20px}
+.stat b{display:block;font-family:'Plus Jakarta Sans';font-size:1.7rem;font-weight:800;color:var(--mint)}
+.stat span{font-size:.8rem;color:#A9BCD4;letter-spacing:.04em}
+
+/* ===== TENTANG ===== */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.fact small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.fact b{font-family:'Plus Jakarta Sans';font-size:1.15rem;font-weight:800;color:var(--navy)}
+.pill-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.pill{background:#fff;border-left:4px solid var(--green);border-radius:12px;box-shadow:var(--shadow);padding:18px 20px}
+.pill h4{font-size:1rem;color:var(--navy);margin-bottom:4px}
+.pill p{font-size:.86rem;color:var(--muted)}
+
+/* ===== VISI MISI ===== */
+.vm-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.vm-card{border-radius:20px;padding:40px 36px}
+.vm-visi{background:#EAF1F9;color:var(--ink)}
+.vm-misi{background:linear-gradient(160deg,var(--green),#0E7A44);color:#fff}
+.vm-card h3{font-size:1.1rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:20px}
+.vm-visi h3{color:var(--navy)}
+.vm-visi p{font-size:1.05rem;font-weight:500}
+.misi-list{list-style:none;display:grid;gap:14px}
+.misi-list li{display:flex;gap:14px;align-items:flex-start;font-size:.95rem}
+.misi-num{flex:0 0 28px;height:28px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center;font-family:'Plus Jakarta Sans';font-weight:700;font-size:.8rem}
+
+/* ===== NILAI ===== */
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.value{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .25s,box-shadow .25s}
+.value:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.value .icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:16px;background:#E8F6EF}
+.value h4{color:var(--navy);margin-bottom:6px}
+.value p{font-size:.88rem;color:var(--muted)}
+
+/* ===== RANTAI PASOK (signature) ===== */
+.chain{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;margin-bottom:48px}
+.chain::before{content:"";position:absolute;top:34px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--mint),var(--green),#2E6FB7);opacity:.6}
+.chain-node{text-align:center;position:relative;padding:0 8px}
+.chain-dot{width:68px;height:68px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font-size:1.5rem;background:var(--navy-soft);border:2px solid var(--mint);position:relative;z-index:1;transition:transform .3s}
+.chain-node:hover .chain-dot{transform:scale(1.12)}
+.chain-node b{display:block;font-family:'Plus Jakarta Sans';font-size:.95rem;color:#fff;margin-bottom:4px}
+.chain-node span{font-size:.76rem;color:#A9BCD4}
+.chain-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.chain-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px}
+.chain-card h5{font-family:'Plus Jakarta Sans';font-size:.82rem;letter-spacing:.1em;color:var(--mint);margin-bottom:10px;text-transform:uppercase}
+.chain-card ul{list-style:none;display:grid;gap:6px}
+.chain-card li{font-size:.8rem;color:#C6D4E6;padding-left:14px;position:relative}
+.chain-card li::before{content:"•";position:absolute;left:0;color:var(--green)}
+.chain-metrics{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;background:var(--navy-soft);border-radius:var(--radius);overflow:hidden}
+.chain-metrics div{padding:20px;text-align:center;border-right:1px solid rgba(255,255,255,.08);font-family:'Plus Jakarta Sans';font-weight:700;color:#fff;font-size:.92rem}
+.chain-metrics div:last-child{border-right:0}
+.chain-metrics small{display:block;font-family:'Inter';font-weight:400;color:#A9BCD4;font-size:.75rem;margin-top:2px}
+
+/* ===== PROSES RPA ===== */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 20px;text-align:center}
+.step-num{font-family:'Plus Jakarta Sans';font-size:2rem;font-weight:800;color:var(--green);opacity:.9}
+.step h4{color:var(--navy);font-size:.98rem;margin:8px 0 8px}
+.step p{font-size:.82rem;color:var(--muted)}
+
+/* ===== PRODUK ===== */
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:6px}
+.product .icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.2rem;background:#E8F6EF;margin-bottom:8px}
+.product h4{color:var(--navy)}
+.product p{font-size:.86rem;color:var(--muted);flex:1}
+.badge{align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.18em;color:var(--green);border-top:2px solid var(--green);padding-top:8px;margin-top:10px}
+
+/* ===== MUTU ===== */
+.qa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.qa{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px;text-align:center}
+.qa .icon{width:56px;height:56px;margin:0 auto 16px;border-radius:50%;background:var(--green);display:grid;place-items:center;font-size:1.5rem}
+.qa h4{color:#fff;margin-bottom:8px}
+.qa p{font-size:.85rem;color:#A9BCD4}
+
+/* ===== DISTRIBUSI & MITRA ===== */
+.dist-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.dist-info{display:grid;gap:14px}
+.dist-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.dist-item .icon{flex:0 0 40px;height:40px;border-radius:10px;background:#E8F6EF;display:grid;place-items:center}
+.dist-item small{display:block;font-size:.72rem;font-weight:700;color:var(--green);letter-spacing:.12em;text-transform:uppercase}
+.dist-item b{font-family:'Plus Jakarta Sans';color:var(--navy)}
+.partners{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.partner{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.partner-head{padding:12px 18px;font-family:'Plus Jakarta Sans';font-weight:800;color:#fff;font-size:.9rem;letter-spacing:.04em}
+.partner-body{padding:16px 18px}
+.partner-body small{display:block;color:var(--muted);font-size:.75rem;margin-bottom:8px;font-weight:600}
+.partner-body ul{list-style:none;display:grid;gap:4px}
+.partner-body li{font-size:.82rem;color:var(--ink);padding-left:14px;position:relative}
+.partner-body li::before{content:"—";position:absolute;left:0;color:var(--green)}
+.route{margin-top:20px;background:#EAF1F9;border-radius:12px;padding:14px 18px;font-size:.85rem;color:var(--navy);font-weight:600;text-align:center}
+
+/* ===== KERJASAMA ===== */
+.opps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.opp{background:#fff;border-top:4px solid var(--green);border-radius:12px;box-shadow:var(--shadow);padding:24px 18px;display:flex;flex-direction:column}
+.opp:nth-child(even){border-top-color:var(--navy)}
+.opp h4{color:var(--navy);font-size:1rem}
+.opp small{color:var(--green);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin:4px 0 12px}
+.opp p{font-size:.82rem;color:var(--muted);flex:1}
+.opp a{margin-top:16px;font-size:.78rem;font-weight:700;color:var(--green);letter-spacing:.08em}
+.invest{margin-top:56px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.invest-card{background:var(--navy);color:#fff;border-radius:12px;padding:22px 18px}
+.invest-card small{display:block;font-size:.72rem;color:#A9BCD4;letter-spacing:.1em;text-transform:uppercase}
+.invest-card b{font-family:'Plus Jakarta Sans';font-size:1.35rem;font-weight:800;color:var(--mint);display:block;margin:4px 0 8px}
+.invest-card p{font-size:.76rem;color:#C6D4E6}
+
+/* ===== KONTAK ===== */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+.contact-list{display:grid;gap:14px;margin-top:24px}
+.contact-item{display:flex;gap:14px;align-items:flex-start}
+.contact-item .icon{flex:0 0 42px;height:42px;border-radius:50%;background:var(--green);display:grid;place-items:center;font-size:1.05rem}
+.contact-item small{display:block;font-size:.72rem;color:#A9BCD4;letter-spacing:.1em;text-transform:uppercase}
+.contact-item b{color:#fff;font-family:'Plus Jakarta Sans';font-weight:600;font-size:.95rem}
+.form-card{background:#fff;border-radius:20px;padding:36px;box-shadow:var(--shadow);color:var(--ink)}
+.form-card h3{color:var(--navy);margin-bottom:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.8rem;font-weight:600;color:var(--navy)}
+.field input,.field select,.field textarea{font-family:'Inter';font-size:.9rem;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--mint);border-color:var(--green)}
+.form-msg{margin-top:14px;font-size:.88rem;font-weight:600;display:none}
+.form-msg.ok{display:block;color:var(--green)}
+.form-msg.err{display:block;color:#C0392B}
+
+/* ===== FOOTER ===== */
+.footer{background:var(--navy-deep);color:#A9BCD4;padding:40px 0;font-size:.85rem}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.footer b{color:#fff;font-family:'Plus Jakarta Sans'}
+.footer .tag{color:var(--mint);letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;font-weight:700}
+
+/* ===== Reveal ===== */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ===== Responsive ===== */
+@media(max-width:980px){
+  .hero-stats,.chain-metrics{grid-template-columns:repeat(2,1fr)}
+  .chain{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .chain::before{display:none}
+  .chain-cards,.steps,.opps,.invest{grid-template-columns:repeat(2,1fr)}
+  .values-grid,.products,.qa-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.vm-grid,.dist-grid,.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .section{padding:64px 0}
+  .nav-links{position:fixed;top:68px;right:0;left:0;background:var(--navy-deep);flex-direction:column;padding:24px;gap:18px;display:none;border-bottom:1px solid rgba(255,255,255,.1)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  .chain,.chain-cards,.steps,.opps,.invest,.values-grid,.products,.qa-grid,.partners,.form-grid,.about-facts,.pill-cards{grid-template-columns:1fr}
+  .hero{padding:130px 0 80px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGASI -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#beranda" class="brand">
+      <span class="brand-logo">PA</span>
+      <span>
+        <span class="brand-name">PT PRIMA ANDALAS ENERGI</span>
+        <span class="brand-tag">Energi Bersih, Masa Depan Lestari</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#tentang">Tentang</a>
+      <a href="#rantai">Rantai Pasok</a>
+      <a href="#produk">Produk</a>
+      <a href="#mitra">Mitra</a>
+      <a href="#kerjasama">Kerjasama</a>
+      <a href="#kontak" class="nav-cta">Hubungi Kami</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="beranda">
+  <div class="container hero-inner">
+    <span class="eyebrow">Integrated Poultry Supply &amp; Distribution</span>
+    <h1>Rantai pasok ayam broiler <em>dari peternak hingga meja Anda</em></h1>
+    <p class="lead">Kami mengelola rantai pasok ayam broiler dari peternak lokal hingga pembeli akhir — HORECA dan industri pengolahan makanan — sebagai solusi lengkap pemenuhan kebutuhan protein hewani nasional.</p>
+    <div class="hero-actions">
+      <a class="btn btn-green" href="#kerjasama">Mulai Kerjasama</a>
+      <a class="btn btn-ghost" href="#tentang">Profil Perusahaan</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><b>500 Ton</b><span>Kapasitas / Bulan</span></div>
+      <div class="stat"><b>5+</b><span>Mitra Strategis</span></div>
+      <div class="stat"><b>100%</b><span>Halal Certified</span></div>
+      <div class="stat"><b>4 Hari</b><span>Delivery Time</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- TENTANG -->
+<section class="section" id="tentang">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="eyebrow">Company Overview</span>
+        <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0 1rem;color:var(--navy)">Tentang Perusahaan</h2>
+        <span class="underline"></span>
+        <p style="margin-top:20px">PT Prima Andalas Energi adalah perusahaan yang bergerak di bidang <b>Integrated Poultry Supply &amp; Distribution</b>. Kami mengelola rantai pasok ayam broiler dari peternak lokal hingga ke tangan pembeli akhir, mencakup Hotel, Restoran, Kafe (HORECA) dan industri pengolahan makanan.</p>
+        <p style="margin-top:14px;color:var(--muted)">Dengan kapasitas olah hingga 500 ton per bulan melalui jaringan RPA (Rumah Potong Ayam) yang terintegrasi, kami hadir sebagai solusi lengkap dan terpercaya dalam pemenuhan kebutuhan protein hewani nasional.</p>
+        <div class="pill-cards">
+          <div class="pill"><h4>Kualitas Terjamin</h4><p>Standar food safety ketat di setiap proses</p></div>
+          <div class="pill"><h4>Rantai Dingin</h4><p>Cold storage &amp; distribusi bersuhu terkontrol</p></div>
+          <div class="pill"><h4>Pasokan Stabil</h4><p>Sumber dari peternak mitra terpercaya</p></div>
+          <div class="pill"><h4>Nilai Nasional</h4><p>Mitra BUMD, BUMN &amp; industri strategis</p></div>
+        </div>
+      </div>
+      <div class="about-facts reveal">
+        <div class="fact"><small>Didirikan</small><b>2024</b></div>
+        <div class="fact"><small>Kapasitas</small><b>500 Ton/Bln</b></div>
+        <div class="fact"><small>Lokasi</small><b>Jakarta Selatan</b></div>
+        <div class="fact"><small>Mitra Utama</small><b>5 Partners</b></div>
+        <div class="fact" style="grid-column:1/-1"><small>Alamat</small><b style="font-size:.95rem">Jl. Pertanian Raya No. 64, Lebak Bulus, Cilandak, Jakarta Selatan 12440</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISI MISI -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Vision &amp; Mission</span>
+      <h2 style="color:var(--navy)">Visi, Misi &amp; Nilai</h2>
+    </div>
+    <div class="vm-grid reveal">
+      <div class="vm-card vm-visi">
+        <h3>Visi</h3>
+        <p>Menjadi perusahaan distribusi dan pengelolaan komoditas protein hewani terkemuka di Indonesia yang berkelanjutan, inovatif, dan memberikan nilai nyata bagi petani, mitra bisnis, dan masyarakat luas.</p>
+      </div>
+      <div class="vm-card vm-misi">
+        <h3>Misi</h3>
+        <ul class="misi-list">
+          <li><span class="misi-num">1</span>Mengintegrasikan rantai pasok dari peternak hingga pembeli akhir</li>
+          <li><span class="misi-num">2</span>Menjamin kualitas produk melalui standar HACCP &amp; cold chain</li>
+          <li><span class="misi-num">3</span>Membangun kemitraan jangka panjang yang saling menguntungkan</li>
+          <li><span class="misi-num">4</span>Mendukung ketahanan pangan nasional melalui pasokan stabil</li>
+          <li><span class="misi-num">5</span>Berinovasi dalam teknologi pengolahan dan distribusi modern</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NILAI -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Core Values</span>
+      <h2 style="color:var(--navy)">Nilai-Nilai Perusahaan</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value reveal"><div class="icon">🛡️</div><h4>Integrity</h4><p>Menjalankan bisnis dengan transparansi dan kejujuran dalam setiap aspek operasional.</p></div>
+      <div class="value reveal"><div class="icon">🏅</div><h4>Quality</h4><p>Berkomitmen terhadap standar mutu tertinggi dari hulu ke hilir rantai pasok.</p></div>
+      <div class="value reveal"><div class="icon">📈</div><h4>Innovation</h4><p>Mendorong inovasi teknologi dan proses untuk efisiensi dan nilai tambah lebih tinggi.</p></div>
+      <div class="value reveal"><div class="icon">🌱</div><h4>Sustainability</h4><p>Menjaga kelestarian lingkungan dan mendukung praktik pertanian berkelanjutan.</p></div>
+      <div class="value reveal"><div class="icon">🤝</div><h4>Partnership</h4><p>Membangun hubungan kemitraan yang saling menguntungkan dan jangka panjang.</p></div>
+      <div class="value reveal"><div class="icon">⭐</div><h4>Customer Satisfaction</h4><p>Menempatkan kepuasan pelanggan sebagai prioritas utama dalam setiap keputusan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RANTAI PASOK -->
+<section class="section dark" id="rantai">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Supply Chain</span>
+      <h2>Roadmap &amp; Alur Rantai Pasok Komoditas</h2>
+      <p>Kami mengintegrasikan seluruh mata rantai dari hulu ke hilir untuk memastikan kualitas, efisiensi, dan keandalan pasokan protein hewani nasional — dari petani hingga pembeli akhir.</p>
+    </div>
+
+    <div class="chain reveal">
+      <div class="chain-node"><div class="chain-dot">🌱</div><b>Peternak</b><span>Produsen Awal</span></div>
+      <div class="chain-node"><div class="chain-dot">🏭</div><b>RPA</b><span>Titik Pusat Pengelola</span></div>
+      <div class="chain-node"><div class="chain-dot">❄️</div><b>Cold Storage</b><span>Penyimpanan Dingin</span></div>
+      <div class="chain-node"><div class="chain-dot">🚚</div><b>Distribusi</b><span>Logistik &amp; Pengiriman</span></div>
+      <div class="chain-node"><div class="chain-dot">🏨</div><b>HORECA</b><span>Hotel, Resto &amp; Kafe</span></div>
+      <div class="chain-node"><div class="chain-dot">🥫</div><b>Pabrik</b><span>Bakso, Sosis &amp; Nugget</span></div>
+    </div>
+
+    <div class="chain-cards reveal">
+      <div class="chain-card"><h5>1 · Petani</h5><ul><li>1 Ha = 100.000 unit</li><li>Waktu kirim 4 hari</li><li>Ke RPA langsung</li></ul></div>
+      <div class="chain-card"><h5>2 · RPA ★</h5><ul><li>Kapasitas 500T/bulan</li><li>Karkas 0.8–2.5 kg</li><li>BLD, BLP, MDM</li></ul></div>
+      <div class="chain-card"><h5>3 · Distribusi</h5><ul><li>Cold storage wajib</li><li>5 mitra penyalur</li><li>Seluruh Indonesia</li></ul></div>
+      <div class="chain-card"><h5>4A · HORECA</h5><ul><li>Hotel, Resto, Kafe</li><li>Via mitra distribusi</li><li>Freshly delivered</li></ul></div>
+      <div class="chain-card"><h5>4B · Pabrik</h5><ul><li>Pabrik bakso, sosis</li><li>Langsung dari RPA</li><li>MDM &amp; Boneless</li></ul></div>
+    </div>
+
+    <div class="chain-metrics reveal">
+      <div>10 Ton/Minggu<small>= Rp400 Juta</small></div>
+      <div>10 Ton/Bulan<small>= Rp800 Juta</small></div>
+      <div>5 Mitra<small>Penyalur Resmi</small></div>
+      <div>14 Hari<small>TOP PELNI</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROSES RPA -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">RPA Production Process</span>
+      <h2 style="color:var(--navy)">Alur Proses Produksi RPA</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">01</div><h4>Live Bird Handling</h4><p>Penerimaan &amp; persiapan ayam hidup dari peternak</p></div>
+      <div class="step reveal"><div class="step-num">02</div><h4>Penyembelihan</h4><p>Proses halal bersertifikat standar MUI</p></div>
+      <div class="step reveal"><div class="step-num">03</div><h4>Pencabutan Bulu</h4><p>Mesin defeathering otomatis higienis</p></div>
+      <div class="step reveal"><div class="step-num">04</div><h4>Chilling &amp; Cleaning</h4><p>Pendinginan cepat &amp; pembersihan standar HACCP</p></div>
+      <div class="step reveal"><div class="step-num">05</div><h4>Packaging</h4><p>Pengemasan vakum &amp; labeling siap distribusi</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section class="section" id="produk" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Product Portfolio</span>
+      <h2 style="color:var(--navy)">Katalog Produk</h2>
+      <p>Produk segar berkualitas tinggi bersuhu terkontrol, siap kirim.</p>
+    </div>
+    <div class="products">
+      <div class="product reveal"><div class="icon">🍗</div><h4>Karkas Ayam</h4><p>Ukuran 0.8 – 2.5 kg</p><span class="badge">TERSEDIA</span></div>
+      <div class="product reveal"><div class="icon">✅</div><h4>BLD (Boneless Dada)</h4><p>Daging dada tanpa tulang</p><span class="badge">TERSEDIA</span></div>
+      <div class="product reveal"><div class="icon">✅</div><h4>BLP (Boneless Paha)</h4><p>Daging paha tanpa tulang</p><span class="badge">TERSEDIA</span></div>
+      <div class="product reveal"><div class="icon">🏭</div><h4>MDM</h4><p>Mechanically Deboned Meat untuk industri olahan</p><span class="badge">TERSEDIA</span></div>
+      <div class="product reveal"><div class="icon">❄️</div><h4>Frozen Chicken</h4><p>Cold Chain IQF</p><span class="badge">TERSEDIA</span></div>
+      <div class="product reveal"><div class="icon">🌿</div><h4>Fresh Chicken</h4><p>Karkas segar siap kirim</p><span class="badge">TERSEDIA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MUTU -->
+<section class="section dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Quality Assurance</span>
+      <h2>Jaminan Mutu &amp; Keamanan Pangan</h2>
+    </div>
+    <div class="qa-grid">
+      <div class="qa reveal"><div class="icon">🛡️</div><h4>HACCP Compliant</h4><p>Sistem analisis bahaya dan titik kendali kritis sesuai standar internasional</p></div>
+      <div class="qa reveal"><div class="icon">❄️</div><h4>Cold Chain</h4><p>Rantai dingin terjaga dari RPA hingga pengiriman ke pembeli akhir</p></div>
+      <div class="qa reveal"><div class="icon">☪️</div><h4>Halal Certified</h4><p>Seluruh proses penyembelihan sesuai syariat Islam &amp; standar MUI</p></div>
+      <div class="qa reveal"><div class="icon">✔️</div><h4>Quality Control</h4><p>Inspeksi ketat di setiap tahap produksi oleh tim QC terlatih</p></div>
+      <div class="qa reveal"><div class="icon">🥗</div><h4>Food Safety</h4><p>Standar keamanan pangan WHO &amp; Permentan berlaku di seluruh fasilitas</p></div>
+      <div class="qa reveal"><div class="icon">📦</div><h4>Packaging</h4><p>Kemasan vakum food-grade menjaga kesegaran dan higienitas produk</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DISTRIBUSI & MITRA -->
+<section class="section" id="mitra">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Distribution Network</span>
+      <h2 style="color:var(--navy)">Jaringan Distribusi Nasional</h2>
+    </div>
+    <div class="dist-grid">
+      <div class="dist-info reveal">
+        <div class="dist-item"><div class="icon">📍</div><div><small>Pusat Operasi</small><b>Jakarta Selatan — Lebak Bulus, Cilandak</b></div></div>
+        <div class="dist-item"><div class="icon">🧊</div><div><small>Gudang Cold Storage</small><b>Seluruh mitra, bersuhu -18°C s/d 4°C</b></div></div>
+        <div class="dist-item"><div class="icon">🚚</div><div><small>Armada Logistik</small><b>Refrigerator truck, siap kirim 24 jam</b></div></div>
+        <div class="dist-item"><div class="icon">🗺️</div><div><small>Jangkauan</small><b>Seluruh Indonesia via mitra PELNI</b></div></div>
+        <div class="route">Jakarta → Surabaya → Makassar → Medan → Seluruh Kota Besar Indonesia</div>
+      </div>
+      <div class="reveal">
+        <h3 style="color:var(--navy);font-size:.95rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px">Mitra Distribusi Resmi</h3>
+        <div class="partners">
+          <div class="partner"><div class="partner-head" style="background:#41648F">DHARMAJAYA</div><div class="partner-body"><small>BUMD Jakarta</small><ul><li>Badan Usaha Milik Daerah Jakarta</li><li>Mitra distribusi unggas resmi</li><li>Jakarta &amp; sekitarnya</li></ul></div></div>
+          <div class="partner"><div class="partner-head" style="background:#C0392B">PELNI TRADING</div><div class="partner-body"><small>BUMN Strategis</small><ul><li>Kinerja 2024: Rp120M/tahun</li><li>Aturan bayar 14 Hari TOP</li><li>Jalur RPA → Pelabuhan</li></ul></div></div>
+          <div class="partner"><div class="partner-head" style="background:#D3822B">ID FOOD</div><div class="partner-body"><small>Holding BUMN</small><ul><li>Holding pangan strategis BUMN</li><li>Distribusi komoditas nasional</li><li>Jaringan seluruh Indonesia</li></ul></div></div>
+          <div class="partner"><div class="partner-head" style="background:#3E8E4F">BULOG</div><div class="partner-body"><small>Logistik Nasional</small><ul><li>Perum Bulog mitra strategis</li><li>Ketahanan pangan nasional</li><li>Gudang tersebar seluruh RI</li></ul></div></div>
+          <div class="partner" style="grid-column:1/-1"><div class="partner-head" style="background:#4A7FB5">DUA PUTRA</div><div class="partner-body"><small>Mitra Distribusi</small><ul><li>Jaringan distribusi swasta</li><li>Penghubung RPA &amp; pasar</li><li>Kemitraan berkelanjutan</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KERJASAMA & INVESTASI -->
+<section class="section" id="kerjasama" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Business Opportunities</span>
+      <h2 style="color:var(--navy)">Peluang Kerjasama Bisnis</h2>
+    </div>
+    <div class="opps">
+      <div class="opp reveal"><h4>Supplier</h4><small>Pemasok Komoditas</small><p>Bergabung sebagai peternak mitra. Dapatkan harga jual terjamin &amp; akses pasar yang lebih luas.</p><a href="#kontak">MULAI KERJASAMA →</a></div>
+      <div class="opp reveal"><h4>Investor</h4><small>Mitra Investasi</small><p>Investasi di sektor agribisnis strategis dengan ROI kompetitif &amp; pasar yang terus tumbuh.</p><a href="#kontak">MULAI KERJASAMA →</a></div>
+      <div class="opp reveal"><h4>Distributor</h4><small>Mitra Distribusi</small><p>Jadilah mitra distribusi resmi di wilayah Anda dengan dukungan supply yang stabil &amp; terpercaya.</p><a href="#kontak">MULAI KERJASAMA →</a></div>
+      <div class="opp reveal"><h4>HORECA</h4><small>Hotel, Resto &amp; Kafe</small><p>Dapatkan pasokan ayam segar berkualitas premium langsung dari RPA ke dapur Anda.</p><a href="#kontak">MULAI KERJASAMA →</a></div>
+      <div class="opp reveal"><h4>Processing Industry</h4><small>Industri Pengolahan</small><p>Pasokan MDM, BLD, BLP untuk pabrik bakso, sosis, nugget dengan volume besar.</p><a href="#kontak">MULAI KERJASAMA →</a></div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:72px;margin-bottom:32px">
+      <span class="eyebrow">Investment Opportunity</span>
+      <h2 style="color:var(--navy)">Peluang Investasi Strategis</h2>
+    </div>
+    <div class="invest" style="margin-top:0">
+      <div class="invest-card reveal"><small>Market Size</small><b>Rp500 T+</b><p>Pasar daging ayam nasional per tahun tumbuh 8–10% YoY</p></div>
+      <div class="invest-card reveal"><small>ROI Potensial</small><b>25–35%</b><p>Return kompetitif dengan payback period 2–3 tahun</p></div>
+      <div class="invest-card reveal"><small>Scalable</small><b>1.000 Ton</b><p>Target ekspansi kapasitas hingga 1.000 ton/bulan dalam 2 tahun</p></div>
+      <div class="invest-card reveal"><small>Growth</small><b>+15% YoY</b><p>Pertumbuhan permintaan protein hewani domestik yang konsisten</p></div>
+      <div class="invest-card reveal"><small>Supply Chain</small><b>Terintegrasi</b><p>Kontrol penuh rantai pasok dari farm hingga fork dengan teknologi</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section dark" id="kontak">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Hubungi Kami</span>
+        <h2 style="margin:.5rem 0 1rem">Kontak &amp; Informasi</h2>
+        <p style="color:#A9BCD4">Kami siap membangun kerjasama yang saling menguntungkan. Bersama membangun ekosistem pangan yang kuat, berkelanjutan, dan memberikan nilai nyata bagi seluruh pemangku kepentingan.</p>
+        <div class="contact-list">
+          <div class="contact-item"><div class="icon">📍</div><div><small>Alamat</small><b>Jl. Pertanian Raya No. 64, Lebak Bulus, Cilandak, Jakarta Selatan 12440</b></div></div>
+          <div class="contact-item"><div class="icon">📞</div><div><small>Telepon</small><b>(021) 38805263</b></div></div>
+          <div class="contact-item"><div class="icon">✉️</div><div><small>Email</small><b>info@primaandalasenergi.co.id</b></div></div>
+          <div class="contact-item"><div class="icon">🌐</div><div><small>Website</small><b>www.primaandalasenergi.co.id</b></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <h3>Kirim Pesan</h3>
+        <div class="form-grid">
+          <div class="field"><label for="fNama">Nama *</label><input id="fNama" type="text" placeholder="Nama lengkap"></div>
+          <div class="field"><label for="fEmail">Email *</label><input id="fEmail" type="email" placeholder="nama@email.com"></div>
+          <div class="field"><label for="fTelp">Telepon</label><input id="fTelp" type="tel" placeholder="08xx-xxxx-xxxx"></div>
+          <div class="field">
+            <label for="fKategori">Kategori Kerjasama</label>
+            <select id="fKategori">
+              <option>Umum</option>
+              <option>Supplier / Peternak Mitra</option>
+              <option>Investor</option>
+              <option>Distributor</option>
+              <option>HORECA</option>
+              <option>Industri Pengolahan</option>
+            </select>
+          </div>
+          <div class="field full"><label for="fPesan">Pesan *</label><textarea id="fPesan" rows="4" placeholder="Tuliskan kebutuhan atau pertanyaan Anda"></textarea></div>
+          <div class="field full">
+            <button class="btn btn-green" id="btnKirim" onclick="kirimPesan()">Kirim Pesan</button>
+            <div class="form-msg" id="formMsg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <b>PT PRIMA ANDALAS ENERGI</b><br>
+      <span class="tag">Energi Bersih, Masa Depan Lestari</span>
+    </div>
+    <div>"Building Sustainable Partnerships"</div>
+    <div>© <span id="thn"></span> PT Prima Andalas Energi. Seluruh hak cipta dilindungi.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('thn').textContent = new Date().getFullYear();
+
+// Tutup menu mobile saat link diklik
+document.querySelectorAll('#navLinks a').forEach(function(a){
+  a.addEventListener('click', function(){
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+// Scroll reveal
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  els.forEach(function(el){ io.observe(el); });
+})();
+
+// Form kontak → google.script.run (Apps Script backend)
+function kirimPesan(){
+  var msg = document.getElementById('formMsg');
+  var btn = document.getElementById('btnKirim');
+  var data = {
+    nama: document.getElementById('fNama').value.trim(),
+    email: document.getElementById('fEmail').value.trim(),
+    telepon: document.getElementById('fTelp').value.trim(),
+    kategori: document.getElementById('fKategori').value,
+    pesan: document.getElementById('fPesan').value.trim()
+  };
+
+  msg.className = 'form-msg';
+  if (!data.nama || !data.email || !data.pesan){
+    msg.textContent = 'Mohon lengkapi nama, email, dan pesan.';
+    msg.className = 'form-msg err';
+    return;
+  }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)){
+    msg.textContent = 'Format email tidak valid.';
+    msg.className = 'form-msg err';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Mengirim…';
+
+  // ====================================================================
+  // PENTING: Ganti URL di bawah ini dengan URL Web App Apps Script Anda
+  // (yang berakhiran /exec). Ambil dari: Deploy → Manage deployments.
+  // ====================================================================
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwwpCkx-UGQjk66e4T_NCZOl1k93U4HL5ScGAHehCB4mPb7YwUvG19Gik8UVvJnO5cA/exec';
+
+  fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: new URLSearchParams(data)
+  }).then(function(){
+    btn.disabled = false;
+    btn.textContent = 'Kirim Pesan';
+    msg.textContent = 'Terima kasih! Pesan Anda telah kami terima.';
+    msg.className = 'form-msg ok';
+    ['fNama','fEmail','fTelp','fPesan'].forEach(function(id){ document.getElementById(id).value=''; });
+  }).catch(function(){
+    btn.disabled = false;
+    btn.textContent = 'Kirim Pesan';
+    msg.textContent = 'Gagal mengirim. Periksa koneksi internet Anda lalu coba lagi.';
+    msg.className = 'form-msg err';
+  });
+}
+</script>
+</body>
+</html>
